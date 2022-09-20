@@ -48,6 +48,11 @@ public class EmployeeServiceImp implements EmployeeService {
 
     }
 
+    @Override
+    public List<Employee> getAllEmployee() {
+        return employees;
+    }
+
     class EmployeeArrayIsFullException extends RuntimeException {
         @Override
         public String toString() {
